@@ -3,35 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles/firstpage.css">
      <style>
          body{
              margin: 0;
              padding: 0;
-             background: url("images/bg1.html.jpg");
+             background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/Mahatma-Gandhi-Jayanti-Wallpaper-33827.jpg");
              background-size: cover;
+             height: 100vh;
+             background-repeat: no-repeat;
+             
              
              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
              font-display: bold;
-             
-             
-
          }
      </style>
    
 </head>
+<script type="text/javascript">
+    var check= ()=>{
+      var username = document.myform.username.value.trim();
+      var password = document.myform.password.value.trim();
+      var email = document.myform.email.value.trim();
+ 
+      if(username ==""||(username.length<3)||(username.length>12)){
+          alert("Invalid Name");
+          document.myform.username.focus();
+      }
+      else if (username.match(/[1-9]/)){
+          alert("Invalid Name");
+          document.myform.password.value="";
+          document.myform.password.focus();
+      }
+      else if (!username.match(/[A-Za-z]/)){
+          alert("Invalid Name");
+          document.myform.password.value="";
+          document.myform.password.focus();
+      }
+      else if (!password.match(/[1-9]/)){
+          alert("Password must have a number");
+          document.myform.password.value="";
+          document.myform.password.focus();
+      }
+      else if (!password.match(/[A-Z]/)){
+          alert("Password must have an uppercase");
+          document.myform.password.value="";
+          document.myform.password.focus();
+      }
+      else if (!password.match(/[a-z]/)){
+          alert("Password must have a lowercase");
+          document.myform.password.value="";
+          document.myform.password.focus();
+          }
+      else if (!password.match(/[!@#$%^&*]/)){
+          alert("Password must have a special character");
+          document.myform.password.value="";
+          document.myform.password.focus();
+      }	
+      else if(email=="" || (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)))	{
+          alert("Enter valid email");
+      }
+      else{
+          alert("Welcome");
+          document.myform.submit();
+      }
+          }	
+     </script>
 <body>
  
    <div class="loginbox">
-       <form action="main.html" name="myform">
-           <input type="email" placeholder="Email Address" class="login"><br>
-           <input type="password" placeholder="password">
-           <br><input type="submit" Value="Log in" id="login">
-           <center><a href="newpassword.html">Forgotten password?</a></center>
-           <hr>
-           <br><center><input type="button" value="Create New Account" id="createaccount"></center>
-
+    <form method="get" action="main.html" name="myform">
+           <center><h2><font color="white">Sign-In</font></h2></center>
+           <input type="text" placeholder="Name" name="username" >
+           <input type="password" placeholder="password" name="password"> 
+           <input type="email" placeholder="Email Address" class="login" name="email"><br>
+           <br><center><input type="button" value="Login" id="createaccount" onclick="check()"></center>
        </form>
    </div>
 </body>

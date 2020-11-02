@@ -1,0 +1,221 @@
+#logo{
+    font-size: 30px;
+    font-family: 'Katibeh', cursive;
+
+    top: 8px;
+    left: 16px; 
+    position: absolute; 
+     color:white;  
+    /* font-family: 'Bebas Neue', cursive;  */
+    /* font-size: 50px; */
+    margin-left: 35px;
+    
+}
+
+#dance
+{
+    background: rgba(0,0,0,.7);
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 10%;
+    margin:10px;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+  
+
+    /* left: 50%; */
+}
+
+#dancevideo{
+    position: absolute;
+    top: 0%;
+
+    margin-bottom: 15px;
+    
+}
+
+#dance h2{
+    font-size: 15px;
+}
+
+
+/* .slideshow-container{
+    top:10%;
+    position: absolute;
+    float: right;
+    left:550px;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    /* background-color: #f1f1f1; */
+    color: black;
+  }
+
+  .slideshow-container {
+    max-width: 700px;
+    position: relative;
+  margin-right: 0;
+  top:20%;
+  position: absolute;
+  float: right;
+  left:650px;
+  /* background:rgba(0,0,0,.7) ; */
+  
+    
+  }
+
+  /* .mySlides1 img{
+      filter: brightness(55%);
+
+  } */
+
+  .text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    /* height: 350px; */
+    left:8px;
+    width: 633px;
+    text-align: left;
+    float: right;
+    background-color:rgba(0,0,0,.7) ;
+  }
+
+   /* Fading aimation */
+.fade { 
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  } 
+
+
+  #arts{
+
+    background: rgba(0,0,0,.7);
+    height: 552px;
+    width: 600px;
+    position: absolute;
+    top: 90%;
+    margin-left:700px;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+
+  }
+
+  #artvideo{
+    position: absolute;
+    top: 84%;
+    left:51%;
+    
+    margin-bottom: 10px;
+    
+}
+
+#arts h2{
+  font-size: 15px;
+}
+
+.slideshow-container1 {
+  max-width: 700px;
+  position: relative;
+margin-right: 0;
+top:105%;
+position: absolute;
+float: right;
+left:15px;
+/* background:rgba(0,0,0,.7) ; */
+
+  
+}
+
+#literature{
+
+  background: rgba(0,0,0,.7);
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 180%;
+    margin:10px;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+#literaturevideo{
+  position: absolute;
+  top: 180%;
+
+  /* margin-bottom: 15px; */
+  
+}
+
+#literature h2{
+  font-size: 15px;
+}
+
+.slideshow-container2 {
+  max-width: 700px;
+  position: relative;
+margin-right: 0;
+top:190%;
+position: absolute;
+float: right;
+left:650px;
+
+  
+}

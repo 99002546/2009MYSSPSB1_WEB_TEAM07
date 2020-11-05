@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
 }
@@ -16,27 +17,7 @@ p{
     font-weight: 400;
     color: black;
 }
-.extra-div h2{
-    font-size: 0.9rem;
-    margin: 20px 0 14px 0;
-    font-weight: bold;
-    line-height: 1.1;
-    word-spacing: 4px;
-}
 
-.header{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../images/backgroud.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    clip-path: polygon(100% 0%, 100% 70%, 50% 100%,0 75%, 0 0);
-    position: relative;
-} 
-.container{
-    text-transform: uppercase;
-    padding: 2;
-}
 
 .nav-item a{
     color: #ffff;
@@ -48,25 +29,17 @@ p{
     font-weight: bold;
     text-decoration-color: #ffff;
 }
-.header-section{
-    width: 100%;
-    height: inherit;
-    color:black;
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.introduction p{
+    margin: auto;
+    padding: 40px;
     text-align: center;
-    position: relative;
-}
-.center-div{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.center-div p{
-    font-size: 1.3rem;
-    padding: 10px 0 20px 0;
-    color: black;
+    text-transform: none;
 }
 .header-extradiv{
     width: 100%;
@@ -80,48 +53,111 @@ p{
     padding: 40px;
     border-radius: 3px;
     transition: 0.3s;
-
+    
 }
+.extra-div a{
+    text-decoration: none;
+    color: black;
+}
+
 .extra-div:hover{
     box-shadow: 0 0 20px 0 rgba(0,0,0.3);
 }
-.header1-extradiv{
+.feed{
     width: 100%;
-    height: auto;
-    margin: 100px 0;
-    text-align: center;
+    height: 120vh;
+    background: url("../images/popular.jpg");
+    background-size: cover;
 }
-.extra1-div{
-    background: #ffff;
-    border: medium none;
+.leftbox{
+    width: 49%;
+    height: 100%;
+    float: left;
+    padding: 49px;
+    box-sizing: border-box;
+}
+.leftbox .content{
+    color: #fff;
+    background: rgba(0,0,0,0.4);
     padding: 40px;
-    border-radius: 3px;
-    transition: 0.3s;
+    transition: .4s;
 
 }
-.extra1-div:hover{
-    box-shadow: 0 0 20px 0 rgba(0,0,0.3);
+.leftbox .content:hover{
+    background: rgba(160, 141, 141, 0.4);
 }
-.happy h3{
+.leftbox .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.leftbox .content p{
+    color: white;
+   
+}
+.leftbox .content a{
+    color: white;
+   
+}
+.happy{
+    display: flex;
+    justify-content: center;
+}
+.wrap{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+ .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+    transition: 0.4s;
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    float: left;
+    margin:10px ;
+} 
+.card:hover{
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.7);
+
+}
+.container1{
+    padding: 2px 11px;
+}
+
+.partnership{
     text-align: center;
 }
+.boxes{
+    margin: 40px;
+}
+.boxes img{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
 
 .footersection{
     width: 100%;
     height: auto;
     padding: 70px 0 20px 0;
-    background: paleturquoise;
+    background: rgb(27, 56, 93);
+    color: white;
 
 }
 .footersection p{
-    color:black;
+    color:white;
+    text-transform: none;
 
 }
 .footersection li a{
     font-size: 0.9rem;
     line-height: 1.7;
     font-weight: 400;
-    color:black;
+    color:white;
     text-transform: capitalize;
     text-align: center;
 

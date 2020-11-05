@@ -1,3 +1,14 @@
+
+.nav-item a{
+  color: #ffff;
+  font-weight: bold;
+
+}
+
+.navbar-brand a{
+  font-weight: bold;
+  text-decoration-color: #ffff;
+}
 .loginbox{
     position: absolute;
     top:50%;

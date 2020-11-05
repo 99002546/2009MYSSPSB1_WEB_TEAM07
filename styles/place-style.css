@@ -138,52 +138,55 @@ img {vertical-align: middle;}
 }
 
 .dropbtn {
-  background-color:blue;
-  color: white;
+  background-color:rgba(0,0,0,.5);
+  color:white;
   padding: 16px;
   font-size: 25px;
   border: none;
      font-family: 'Oswald', sans-serif;
-     margin-top: 20px;
+     margin-top: 65px;
      margin-left: 10px ;
-     
+     border-radius: 10px;
   
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-
+  margin-left: 10px;
+  
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color:rgba(0,0,0,.5);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-left: 10px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.7);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: darkblue;}
+.dropdown:hover .dropbtn {background-color: black;}
 
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-margin-right: 0;
+/* margin-right: 0; */
+left: 20%;
   
 }
 
@@ -201,12 +204,15 @@ margin-right: 0;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  
+  
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  /* margin-right: 20%; */
 }
 
 /* On hover, add a grey background color */
@@ -220,6 +226,7 @@ margin-right: 0;
 img.slideshow-container .mySlides3 img{
   
   width:100%;
+  /* smargin-left: 20%; */
 
 }
 

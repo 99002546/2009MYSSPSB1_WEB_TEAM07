@@ -33,7 +33,8 @@
 
 #dancevideo{
     position: absolute;
-    top: 0%;
+    top: 37%;
+    left:5%;
 
     margin-bottom: 15px;
     
@@ -155,8 +156,8 @@
 
   #artvideo{
     position: absolute;
-    top: 84%;
-    left:51%;
+    top: 123%;
+    left:56.5%;
     
     margin-bottom: 10px;
     
@@ -198,7 +199,8 @@ left:15px;
 
 #literaturevideo{
   position: absolute;
-  top: 180%;
+  top: 210%;
+  left:5%;
 
   /* margin-bottom: 15px; */
   

@@ -8,4 +8,4 @@
 Contributers:-
 1) Angana Dawn: Done the food, culture and place page
 2) Gaurav Das: Done the login and feedback page with validation
-3) Ria Singh: Done the Index page
+3) Ria Singh: Done the Index page and header and footer
